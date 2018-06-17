@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--action = recibe una url que se encarga de procesar los datos del formulario
+    method es el que se encarga de enviar la informacion ya sea por medio de POST o GET-->
+    <form action="datos.php" method="GET">
+        <label for="nombre">Nombre:</label><!--relaciona el label con el id del inmput deseado-->
+        <input type="text" placeholder="Escribe el nombre" maxlength="10"  name="name" id="nombre" class="">
+        <!--value="Escribe el nombre" para el valor, pero se usa en vez de este
+        placeholder
+        maxlength = maximo caracteres para ingresado
+        minlength = minimo de caracteres requeridos
+        name = le indica al servidor que valor estamos pidiendole
+        id = se utiliza para identificar un objeto-->
+
+        <input type="password" name="" id=""><br><br>
+        <input type="email" name="" id=""><br>
+        <input type="checkbox" name="" id="">Hombre.
+        <input type="radio" name="" id="">Mujer
+        <input type="radio" name="" id="">Hombre
+        <input type="button" value="presionar"><!--es un boton de acciones-->
+        <input type="submit" value="enviar"><br> <!--envia datos-->
+        <select name="" id="">
+            <option value="Mexico">Mexico</option>
+            <option value="Colombia">Colombia</option>
+        </select>
+        <input type="color" name="" id=""><br>
+        <input type="range" name="" id="">
+    </form>
+</body>
+</html>
