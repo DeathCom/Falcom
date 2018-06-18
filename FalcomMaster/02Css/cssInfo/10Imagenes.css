@@ -1,0 +1,17 @@
+/*Curso Básico de CSS - 10. Imágenes*/
+div {
+  /*background-color: #ccc;*/
+  width: 100%;
+}
+
+img {
+  width: 50%; /*acepta el ;auto;, px y %*/
+  display: block; /*imagenes por defecto son inline-block*/
+  height: auto;
+  margin: auto; /*sirve para centrar contenedores, div, section, pero deben  tener su ancho*/
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #ccc;/*agreg sombra*/
+  padding: 10px;
+  border: 1px solid #ccc;
+
+}

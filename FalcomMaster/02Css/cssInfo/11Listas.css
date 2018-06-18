@@ -1,0 +1,36 @@
+/*Curso Básico de CSS - 11. Listas-*/
+ul {
+  list-style-type: georgian; 
+  list-style-position: inside;
+}
+ol {
+  /*list-style-type:upper-latin;
+  list-style-type: upper-roman;
+  list-style-type: decimal-leading-zero;*/
+  list-style-type: lower-latin;
+  
+}
+
+/*Creando menu con css*/
+.menu {
+  width: 100%;
+  background-color: #000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+
+}
+
+.menu li a {
+  padding: 10px 20px;
+  display: inline-block;
+  color: aliceblue;
+}
+.menu li a:hover{
+  background-color: #ccc;
+  color: #000;
+}

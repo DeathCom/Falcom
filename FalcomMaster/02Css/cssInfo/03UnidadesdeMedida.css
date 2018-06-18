@@ -1,0 +1,24 @@
+/*Curso Basico de CSS - 3. Unidades de Medida*/
+/*Medidas absolutas(no se modifican) y relativas (son flexibles)*/
+
+/*MedidasRelativas*/
+body{
+  font-size:16px; 
+  font-size:16em;
+  font-size:16rem;  
+}
+/*Medidas Absolutas*/
+body{
+  font-size:16cm; 
+  font-size:16mm;
+  font-size:16in;  
+  font-size:16pt; /*se usa mas que todo para impresoras*/  
+}
+/*por otra parte existen los % pero estas medidas se 
+suelen utilizar mas para las cajas en vez de las fuentes
+*/
+div p {
+  background-color: black;
+  color: white;
+  width: 100%;
+}

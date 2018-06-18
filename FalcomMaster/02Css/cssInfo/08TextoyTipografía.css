@@ -1,0 +1,34 @@
+/*Curso Básico de CSS - 8. Texto y Tipografía*/
+/*Tipografia*/
+p{
+  color: rgba(21, 21, 21, 1);
+  font-size: 20px; /*cambia tamano del texto*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*para la tipografia de la fuente del texto*/
+  font-weight: normal; 
+  /*el tipo de anchura del texto bold, normal, italic o se pueden usar con numeros*/
+  text-align: left;
+  /*alinia el texto pero en tipos bloques, podemos usar tambien center, left y right*/
+  line-height: 20px; /*aqui la linea tiene un ancho de 20px*/
+  /*esto para modificar el interlineado del texto*/
+  text-decoration:line-through;
+  /*text-decoration: overline; grega subrayado arriba del texto*/
+  /*text-decoration: underline; agrega subrayado al texto*/
+  /*para agregar decoracion al texto*/
+  text-transform: lowercase;
+  /*
+  text-transform: capitalize; hace que cada primera letra de inicio de parrafo o punto se convierta en mayuscula.
+  text-transform: uppercase; hace que todo se convierta en mayuscula.
+  text-transform: lowercase; hace que todo se convierta en minuscula.
+  */
+  letter-spacing: 12px; /*crea un espaciado entre las letras*/
+  word-spacing: 15px; /*crea un espaciado pero esta entre cada palabra*/
+
+  text-shadow: 5px 5px 5px #000;
+  /*agrega una sombra al texto, en este caso seria:
+  5px de iz a de (horizontalmente)
+  5px de arriba a bajo (verticalmente)
+  5px de tamano de la sombra
+  #000 color de la sombra
+  */
+}

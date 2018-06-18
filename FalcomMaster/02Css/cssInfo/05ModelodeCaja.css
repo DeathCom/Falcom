@@ -1,0 +1,18 @@
+/*Curso Basico de CSS - 5. Modelo de Caja*/
+/*modelo de caja consiste en cajas que se les puede modificar el 
+margen interno, externo, ancho =, alto, ocultar, desplazar, etc
+*/
+#caja div{
+  width: 200px;
+  height: auto;
+  background-color: orange;
+  margin: 20px 15px 20px 30px;
+  /*margin: 20px; aplica a los cuatro lados
+  margin: 20px 50px; aplica (arriba, abajo) (derecha, Izquierda)
+  margin: 20px 15px 20px 30px; aplica = arriba, derecha, abajo, izquierda*/
+
+  padding: 10px; /*son bordes internos de las cajas*/
+  border: 10px darkblue dashed; /*dotte, solid dashed*/
+  display: inline-block; /*para ordenar el posicionamiento de las cajas en relacion al contenido, inline, block*/
+
+}

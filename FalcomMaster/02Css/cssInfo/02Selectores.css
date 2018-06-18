@@ -1,0 +1,40 @@
+/*SELECTORES BASICOS*/
+/*selctor universal aplica el estilo a todos los elementos comunes*/
+*{
+  margin: 0; /*margen de los elementos*/
+  padding: 0; /*margen interno de los elementos */
+  color: black;
+}
+
+
+h2, h4, h6{
+  color: red; /*define el color de la fuente*/
+}
+
+h1{
+  font-size: 20px; /*define el tamano de la fuente*/
+}
+/*selectores descendentes*/
+p a{
+  font-size: 20px;
+  color: olivedrab;
+}
+#parrafo{
+  color: royalblue;
+  font-size: 30px;
+}
+.foot{
+  font-style: italic;
+  font-size: 25px;
+}
+p .green{
+  color: green;
+  font-size: 20px;
+}
+.green{
+  color: yellow;
+}
+a[href="http:/wwwo.gom"]{
+  color: green;
+  font-size: 25px;
+}

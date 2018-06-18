@@ -1,0 +1,21 @@
+/*Curso Básico de CSS - 12. Tablas*/
+
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+/*td son columnas*/
+table td {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+/*tr son filas */
+table tr:hover {
+  background-color: #ccc;
+}
+
+table td:hover {
+  background-color: olive;
+}

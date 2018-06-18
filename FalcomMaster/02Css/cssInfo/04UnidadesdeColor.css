@@ -1,0 +1,22 @@
+/*Curso Basico de CSS - 4. Unidades de Color*/
+/*
+pagina para colores : 
+    https://htmlcolorcodes.com/es/
+    https://html-color-codes.info/
+
+*/
+.UnidadesColor h1{
+  color: aqua; /*coor con palabra clave*/
+}
+.UnidadesColor h2{
+  color: rgb(53, 131, 44); /*rgb decimal*/
+}
+.UnidadesColor h3{
+  color: #4D9B44; /*color hexadecimal*/
+}
+.UnidadesColor h4{
+  color: rgb(10%, 20%, 30%); /*color porcentual*/
+}
+.UnidadesColor h5{
+  color: rgba(49,163,239,.5); /*color rgba es con transparencia*/
+}

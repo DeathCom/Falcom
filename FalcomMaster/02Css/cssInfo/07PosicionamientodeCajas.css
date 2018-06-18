@@ -1,0 +1,82 @@
+/*Curso Basico de CSS - 7. Posicionamiento de cajas*/
+/*
+los elementos linia van uno al lado al otro,
+los divs son elementos bloque*/
+div{
+  width: 100px;
+  height: 100px;
+  background-color: #164aa5;
+  color: #fff;
+  font-size: 30px;
+  float: left;
+  /*con float: left; todas las cajas se desplazan hacia la izquierda.*/
+}
+.caja2{
+  position: relative;
+  top:;
+  bottom:0;
+  right:;
+  left: 200px;
+  /*position: static es la posision por defecto que coloca el navegador
+  position: relative; permite posicionar una caja y luego desplazarla a otra posicion dejando su espacion vacio
+  */
+}
+
+.caja04{
+  position: static;
+  /*al usar position: static; las opciones op, bottom, right, y left se invalidan, */
+}
+
+.caja5{
+  position: absolute;
+  /*position: absolute; trabaja al igual que relative con
+  top, bottom, right, y left, pero este desplaza la caja y el espacio
+  vacio se elimina*/
+
+  top:;
+  bottom:;
+  right:;
+  left: 200px;
+}
+
+.caja_padre{
+  width: 500px;
+  height: 500px;
+  background-color: #000;
+  position: relative;
+  /*cuando tenemos varias cajas dentro de otras cajas, las cajas padre
+  deben ser seteadas con position: relative; y las hijas
+  con position: absolute;*/
+}
+.caja8{
+  position: absolute;
+  top:100px;
+  bottom:;
+  right:;
+  left:100px;
+}
+
+.caja10{
+  position: fixed;
+   /*position: fixed; trabaja a fuerza con el posicionamiento de la ventana principal; usa al igual que las anteriores top, bottom, right, y left. Esta queda en una posicion fija en toda la ventana*/
+  top:100px;
+  bottom:;
+  right:;
+  left:508px;
+}
+
+.caja11{
+  /*al usar float 
+  esto permite desplazar las cajas a la izquierda o a la derecha. 
+  para ello se deben usar todos los divs con float*/
+}
+
+img{
+  width: 110px;
+  height: 110px;
+  float: left;
+  margin: 0 5px 0 0;
+}
+.clear{
+  clear: both;
+}

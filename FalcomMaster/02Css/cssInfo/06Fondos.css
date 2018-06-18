@@ -1,0 +1,30 @@
+/*Curso Basico de CSS - 6. Fondos*/
+body{
+  color: antiquewhite;
+  background-color: #f2f2f2;
+  background-image: url("img/download.jpg");
+  /*coloca imagen de fondo tipo textura*/
+  background-repeat: no-repeat; /*no se repite*/
+  /*
+  background-repeat: repeat-x; repite en eje x
+  background-repeat: repeat-y; repite en eje y
+  background-repeat: repeat;   repite en toda la pantalla
+  */
+ background-attachment: fixed; /*esto para que el fonodo este fijo*/
+ /* background-attachment: scroll; para que el fondo baje con el scrol*/
+ background-position: 50% 0; 
+ /*
+  posiciona el background donde se requiere
+  background-position: 50% 0;
+   background-position: center, 0; centra el fondo en todo el documento
+ */
+}
+
+div{
+  background-color: orange;
+  background-image: url(img/download.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+  color: aliceblue;
+}
+
