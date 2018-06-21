@@ -1,1 +1,51 @@
 /*Curso Básico de CSS - 13. Formularios*/
+form{
+  width: 25%;
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+
+}
+label{
+  font-size: 12px;
+  /*labels son objetos en linea por eso se pone un label
+  a la par del otro, entonces tenemos que poner un display-block */
+  display: block;
+  width: 100%;
+}
+
+textarea{
+  /*usamos resize para indicar al textarea que si se va a poder cambiar o o
+  de tamano*/
+  resize: vertical; /*horizontal both;*/
+  max-height: 200px; /*altura maxima*/
+  min-height: 50px; /*altura minima*/
+}
+input, textarea{
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  /*con esta propiedad le decimos que va a tener el 100% pero
+  que no cuente el paddig que acabamos de agregar*/
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus{
+  /*Con focus se le indica al form detectar cuando el usuario tiene el 
+  cursor en una caja o selecciono una caja */
+  border: 1px solid #1668c4;
+}
+ input[type="submit"]{
+   margin-bottom: 0px;
+   background-color: #1668c4;
+   color: #fff;
+   border: none;
+ }
+ input[type="submit"]:hover{
+  background-color: #4a88f4;
+  cursor: pointer; /*cursor pointer cabia la forma del cursor cuando pasa 
+  sobre algun objeto*/
+}
+
+

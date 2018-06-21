@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #e6e6e6;
+}
+header, .main, footer {
+  /*background-color: #fff;*/
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+header nav{
+  background-color: #528df5;
+  overflow: hidden; /*se agrega overflow:hidden para solucionar el problema del float left del li.
+  overflow: hidden se utiliza para:
+  ocultar el contenido que sobrepasa nuestro contenedor
+  y la otra es que nos limpia nuestros fload:left 
+  */
+}
+
+header nav ul{
+  list-style: none;
+}
+header nav ul li{
+  float: left;
+  /*al agregar un float:left en el li se pierde el color del fondo del nav.
+  para solucionar este problema se debe poner la propiedad overflow:hidden en el nav*/
+}
+header nav ul li a{
+  padding: 10px 20px;
+  display: block; /*esto permite que el padding de arriba y abaajo funcione*/
+  color: #fff;
+  text-decoration: none;
+}
+header nav ul li a:hover{
+  background-color: #75acec;
+}
+
+.main .articles{
+  width: 68.5%;
+  float: left;
+ /* background-color: #fff;*/
+  margin-right: 1.5%;
+}
+.main .articles article{
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+aside{
+  width: 30%;
+  background-color: #ff8000;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  clear: both; /*con clear:both se limpian los rastros que dejan los float: left aplicados con anterioridad*/
+  padding: 10px 0px;
+  text-align: center;
+}
