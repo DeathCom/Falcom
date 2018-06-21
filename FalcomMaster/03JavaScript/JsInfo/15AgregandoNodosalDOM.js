@@ -1,5 +1,4 @@
 
-
 var elemento = document.createElement("li"),
     nodotexto = document.createTextNode("nuevo texto");
 
@@ -27,6 +26,6 @@ al dom.
 //lo anterior para agregar el nodo al final 
 //a continuacion el metodo para agregar el nodo al inicio
 
-//padre.insertBefore(elemento, hijo);
+padre.insertBefore(elemento, hijo);
 //Este recibe dos parametros: 1. el nuevo elemento y 2. el nodo de referencia
 //en este caso sera el primer elemento.
