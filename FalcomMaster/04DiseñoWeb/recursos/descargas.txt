@@ -1,0 +1,25 @@
+Curso de Diseño Web desde 0 - Introducción
+
+framework para linias de regla en photo
+https://960.gs/
+
+reseter:
+http://www.csslab.cl/2010/06/01/css-reseter-v2/
+
+colorZilla:
+http://www.colorzilla.com/gradient-editor/
+
+Google Fonts:
+https://fonts.google.com/
+
+Font Squirrel:
+https://www.fontsquirrel.com/
+
+Slider:
+http://www.slidesjs.com/
+
+iconos:
+http://www.iconspedia.com/
+
+Generador de Codigo: 
+https://www.lipsum.com/
