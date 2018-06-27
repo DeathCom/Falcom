@@ -1,6 +1,8 @@
-Curso de Diseño Web desde 0 - Introducción
+﻿Curso de Diseño Web desde 0 - Introducción
+todos los recursos :
+http://www.falconmasters.com/web-design/curso-de-diseno-web-2-diseno-del-header-y-slideshow/
 
-framework para linias de regla en photo
+framework para linias de regla en photoshop
 https://960.gs/
 
 reseter:
