@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<style type="text/css">
+	body{width:70%;margin:auto;min-width:500px;max-width:700px}
+	article{font:normal 16px Arial, Verdana, sans-serif;}
+	h1:hover{color: rgba(15,119,195,0.5);}
+	a{text-decoration: none; color: #000;}
+	a:hover{text-decoration: none; color:#38CFD1;}
+	footer table{width:100%;border:solid windowtext 1.0pt;}
+	footer table tr td{border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt; text-align:center; font:bold normal 16px Arial, Verdana, sans-serif;}
+	header{height: 50px;background: #000;color: #fff;display: flex;justify-content: flex-end;align-items: center;}
+	#btn-menu{display: none;}
+	header label {font-size: 30px;cursor: pointer;display: none;}
+	.menu ul{display: flex;list-style: none;}
+	.menu ul ul {display: none;}
+	.menu a {display: block;padding: 15px 20px;color: #fff;text-decoration: none;}
+	.menu a:hover {background: rgba(0,0,0,0.3);}
+	.menu a span {margin-left: 10px;}
+	.menu ul li:hover ul {display: block;position: absolute;}
+	header label {display: block;}
+	.menu {position: absolute;top: 350px;left: 0;width: 350px;transform: translateX(-100%);transition: all 0.3s;}
+	.menu ul{display: block;background: rgba(0,0,0,0.8);}
+	.menu ul li:hover ul {display: none;position: static;}
+	.menu a span{position: absolute;right: 10px;}
+	#btn-menu:checked ~ .menu {
+		transform: translateX(50%);
+	}
+	.menu ul ul {background: rgba(0,0,0,0.4);}
+	.menu ul ul a {padding: 5px 5px;} 
+	.menu ul ul a:hover {color:#38CFD1;}
+</style>
+<script type="text/javascript">
+	alert("If you do not see the images, please click on the KB title, log back in and reload the page.");
+	function click(){
+		document.getElementsByTagName("h1")[0].onclick=load;
+	}
+	function load(url){
+		var url = "https://apps.na.collabserv.com/communities/service/html/allcommunities";
+		window.open(url, "https://apps.na.collabserv.com/communities/service/html/allcommunities","width=500,heigth=200,top=400,left=500");
+	}
+window.onload=click;
+</script>
+</head>
+<body>
+<header>
+	<input type="checkbox" name="btn-menu" id="btn-menu">
+	<label for="btn-menu" ><span><img src="https://apps.na.collabserv.com/files/form/api/library/80dfd45e-da16-4e53-8973-39e2a23a77aa/document/9bc2657c-e288-4e98-bb5e-442f66b2fc76/thumbnail?renditionKind=largeview"></span>&nbsp;&nbsp;</label>
+	<nav class="menu">
+		<ul>
+			<li class="submenu"><a href="#">CMD<span><img src="https://apps.na.collabserv.com/files/form/api/library/80dfd45e-da16-4e53-8973-39e2a23a77aa/document/e227946f-b317-4aaa-a8f6-9e46192f229f/thumbnail?renditionKind=largeview"></span></a>
+				<ul>
+					<li><a href="#" target="_blank" onclick="window.open(this.href, this.target, 'width=715,height=500,top=200,left=500'); return false;">Tests 01</a></li>
+					<li><a href="#" target="_blank" onclick="window.open(this.href, this.target, 'width=715,height=500,top=200,left=500'); return false;">Tests 02</a></li>
+					<li><a href="#" target="_blank" onclick="window.open(this.href, this.target, 'width=715,height=500,top=200,left=500'); return false;">Tests 03</a></li>
+				</ul>
+			</li>
+			<li class="submenu"><a href="#">Fire Fox<span><img src="https://apps.na.collabserv.com/files/form/api/library/80dfd45e-da16-4e53-8973-39e2a23a77aa/document/e227946f-b317-4aaa-a8f6-9e46192f229f/thumbnail?renditionKind=largeview"></span></a>
+				<ul>
+					<li><a href="otros/FirefoxKeyboardShortcuts.html" target="_blank" onclick="window.open(this.href, this.target, 'width=715,height=500,top=200,left=500'); return false;">Firefox Keyboard Shortcuts</a></li>
+					<li><a href="otros/FirefoxMouseShortcuts.html" target="_blank" onclick="window.open(this.href, this.target, 'width=715,height=500,top=200,left=500'); return false;">Firefox Mouse Shortcuts</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+	<script>
+		$(".submenu").click(function(){
+		$(this).children("ul").slideToggle();
+		})
+		$("ul").click(function(p){
+			p.stopPropagation();
+		})
+	</script>
+</header>
+		
+<section>
+	<article>
+		<p>
+			<h1>General Article</h1>
+			<br><br>
+			     In this article, <br>
+			     You can find all the articles related with the account of Cms-Sysops. <br>
+			     You just need to do click on the icon <img height="12px" width="20px" src="https://apps.na.collabserv.com/files/form/api/library/80dfd45e-da16-4e53-8973-39e2a23a77aa/document/9bc2657c-e288-4e98-bb5e-442f66b2fc76/thumbnail?renditionKind=largeview"> and selecting the category. <br>
+		</p> 
+		<p>
+			In this KB you can find the <a href="General/CMSCostaRicaoncalllist.html" target="_blank" onclick="window.open(this.href, this.target, 'width=715,height=500,top=200,left=500'); return false;">CMS Costa Rica on call</a> list.
+		</p>
+	</article>
+</section>
+
+<footer>
+	<h3>Summary of Changes</h3>
+	<table>
+		<tr>
+			  <td>Revision Number</td>
+			  <td>Revision Date</td>
+			  <td>Autor</td>
+			  <td>Nature Of Change</td>
+		</tr>
+		<tr>
+			  <td>03</td>
+			  <td>04/30/2017</td>
+			  <td>Cperezme</td>
+			  <td> </td>
+		</tr>
+	</table>
+</footer>
+</body>
+</html>

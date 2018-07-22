@@ -9,6 +9,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="css/estilos.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="jquery.slides.min.js"></script>
+
+  <script>
+    $(function(){
+      $("#slides").slidesjs();
+    });
+  </script>
+  </script>
   <title>Document</title>
 </head>
 <body>
@@ -29,8 +38,14 @@
   <section id="wrap">
 
     <section id="main">
-      <section id="slideshow">
-
+        <div class="container">
+      <section id="slides">
+        <div class="container">
+          <div><a href="#" id=""><img src="imagenes/slideshow/imagen1.jpg" alt=""></a></div>
+          <!--<div><a href="#" id=""><img src="imagenes/slideshow/imagen2.jpg" alt=""></a></div>
+          <div><a href="#" id=""><img src="imagenes/slideshow/imagen3.jpg" alt=""></a></div>
+          <div><a href="#" id=""><img src="imagenes/slideshow/imagen5.jpg" alt=""></a></div>-->
+        </div>
       </section>
 
       <section id="bienvenidos">
@@ -52,14 +67,14 @@
         <article>
           <h2 class="titulo">Titulo del Ariculo</h2>
           <p class="fecha">2 de Octubre del 2012</p>
-          <img class="thumb" src="imagenes/imagen1.jpg" alt="Imagen de puente">
+          <img class="thumb" src="imagenes/slideshow/imagen1.jpg" alt="Imagen de puente">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora atque nobis nesciunt odio eius, et magni illo officia enim, beatae sequi? Eveniet assumenda neque tenetur quibusdam, recusandae non itaque dolore?
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis fugiat modi dolor consequatur, explicabo dolorem ea assumenda. Ipsa nesciunt dolorem sit, soluta, commodi veritatis similique aut vitae dolor, voluptatum enim.</p>
         </article>
         <article>
             <h2 class="titulo">Titulo del Ariculo</h2>
             <p class="fecha">2 de Octubre del 2012</p>
-            <img class="thumb" src="imagenes/imagen2.jpg" alt="Imagen de puente">
+            <img class="thumb" src="imagenes/slideshow/imagen2.jpg" alt="Imagen de puente">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora atque nobis nesciunt odio eius, et magni illo officia enim, beatae sequi? Eveniet assumenda neque tenetur quibusdam, recusandae non itaque dolore?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui accusamus a et velit quisquam corporis consectetur placeat rerum nulla dolorum tenetur consequuntur praesentium beatae, hic saepe doloribus dolores suscipit unde.</p>
           </article>
@@ -79,7 +94,7 @@
 
         <section class="widget">
             <h3>Sitios Recomentados</h3>
-            <img src="imagenes/imagen3.jpg" alt="publicidad">
+            <img src="imagenes/slideshow/imagen3.jpg" alt="publicidad">
         </section>
       </aside>
 

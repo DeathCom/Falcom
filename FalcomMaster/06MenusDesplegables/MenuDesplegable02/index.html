@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Menu Desplegable 02</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+<style type="text/css">
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}	
+
+header {
+	height: 50px;
+	background: #CE852A;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#btn-menu {
+	display: none;
+}
+header label {
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+.menu ul {
+	background: #CE852A;
+	display: flex;
+	list-style: none;
+}
+.menu ul ul {
+	display: none;
+}
+.menu a {
+	display: block;
+	padding: 15px 20px; 
+	color: #fff;
+	text-decoration: none;
+}
+.menu a:hover {
+	background: rgba(0,0,0,0.3);
+}
+.menu a span {
+	margin-left: 10px;
+}
+.menu ul li:hover ul {
+	display: block;
+	position: absolute;
+}
+@media (max-width:768px){
+	header label {
+		display: block;
+	}
+	.menu {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+	}
+	.menu ul {
+		display: block;
+		background: #555;
+	}
+	.menu ul li:hover ul {
+		display: none;
+		position: static;
+	}
+	.menu a span {
+		position: absolute;
+		right: 5px;
+	}
+	#btn-menu:checked ~ .menu {
+		transform: translateX(0%);
+	}
+	.menu ul ul {
+		background: rgba(0,0,0.4);
+	}
+	.menu ul ul a {
+		padding: 15px 40px;
+	}
+}
+</style>
+</head>
+<body>
+	<header>
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu" class="icon-menu"></label>
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Item 1</a></li>
+				<li class="submenu"><a href="#">Item 2 <span class="icon-open"></span></a>
+					<ul>
+						<li><a href="#">Sub Item 1</a></li>
+						<li><a href="#">Sub Item 2</a></li>
+						<li><a href="#">Sub Item 3</a></li>
+						<li><a href="#">Sub Item 4</a></li>
+					</ul>
+				</li>
+				<li class="submenu"><a href="#">Item 3 <span class="icon-open"></span></a>
+					<ul>
+						<li><a href="#">Sub Item 1</a></li>
+						<li><a href="#">Sub Item 2</a></li>
+						<li><a href="#">Sub Item 3</a></li>
+						<li><a href="#">Sub Item 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Item 4 <span class="icon-open"></span></a></li>
+			</ul>
+		</nav>
+	</header>	
+	<script>
+		$(".submenu").click(function(){
+			$(this).children("ul").slideToggle();
+		})
+		$("ul").click(function(p){
+			p.stopPropagation();
+		})
+	</script>	
+</body>
+</html>
