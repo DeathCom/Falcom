@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formularios</title>
+</head>
+<body>
+	<form action="envia a un archivo" method="GET(envia por url) o POST(envia datos por detras">
+		<label for="nom">Nombre:</label>
+		<input type="text" name="nombre" id="nom" placeholder="Escriba Nombre:" maxlength="10" required><br>
+		<input type="text" placeholder="Escriba apellido" readonly disabled><br>
+		<input type="email" name="correo" id="correo" required><br>
+		<textarea name="textarea" placeholder="Comentarios"></textarea><br>
+		<label for="pais">Paises:</label>
+		<select name="paises" id="pais">
+				<option value="Mexico">Mexico</option>
+				<option value="Espana">Espana</option>
+		</select><br> <!--Esto seria un combobox-->
+
+		<!--
+			<input type="radio" name="genero" id="hombre" value="hombre">Hombre
+			<input type="radio" name="genero" id="mujer" value="mujer">Mujer
+		-->
+		<!--Esto se puede mejorar con-->
+		<input type="radio" name="genero" id="hombre" value="hombre"><label for="hombre">Hombre</label>
+		<input type="radio" name="genero" id="mujer" value="mujer"><label for="mujer">Mujer</label>
+		<br>
+		<input type="checkbox" name="terminos" id="terminos"><label for="terminos">Terminos y condiciones</label><br>
+		<input type="submit" value="Enviar">
+	</form>
+	<!--
+		maxlength : maximo caracteres
+		size: tamano del campo
+		required
+		name = ara recibir datos por medio de php
+		readonly = para solo lectura
+		disabled = deshabilita campos
+	-->
+</body>
+</html>
