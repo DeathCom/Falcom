@@ -1,0 +1,10 @@
+/*Selectores*/
+*{
+	/*Selector universal*/
+}
+
+/*Selectoresd de etiqueta*/
+h1, h2{
+	color: blue;
+
+}
