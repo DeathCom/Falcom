@@ -1,0 +1,36 @@
+/*Selectores*/
+*{
+	/*Selector universal*/
+}
+
+/*Selectores de etiqueta*/
+h1, h2{
+	color: blue;
+
+}
+/*selector descendente*/
+div p {
+	color: #c46723;
+}
+
+/*Selectores de clase*/
+.grande {
+	font-size: 28px;
+	font-family: sans-serif;
+}
+
+/*Selectores de id*/
+#rojo {
+	color: red;
+}
+
+
+/*Selector de hijos*/
+div > article > p {
+	font-size: 30px;
+}
+
+/*Selector de atributos*/
+input[type]{}
+
+input[type="text"]{}
