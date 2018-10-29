@@ -7,11 +7,31 @@
 <body>
 	<audio src="se pone la ruta del arhivo media" controls></audio> //esto es solo para un archivo de audio 
 
-	<audio>
+	<audio controls>
 		<source src="ruta del achivo.extension" type="audio/mpeg">
 		<source src="ruta del achivo.extension" type="audio/ogg">
-		<source src="ruta del achivo.extension" type="audio/mva">
+		<source src="ruta del achivo.extension" type="audio/wav">
 	</audio>
+
+	<!--
+		Formato		Media Type
+		======================
+		MP3			audio/mpeg
+		Ogg			audio/ogg
+		Wav			audio/wav
+	 -->
+
+	 <!--
+		Soporte Navegador
+		Navegador	MP3	Wav	Ogg
+		=======================
+		IE			si	no	no
+		Chrome		si	si	si
+		Firefox		si	si	si
+		Safari		si	si	no
+		Opera		si	si	si
+	 -->
+
 
 </body>
 </html>
